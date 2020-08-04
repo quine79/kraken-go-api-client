@@ -16,6 +16,10 @@ const (
 	ADAEUR   = "ADAEUR"
 	ADAUSD   = "ADAUSD"
 	ADAXBT   = "ADAXBT"
+	BATETH   = "BATETH"
+	BATEUR   = "BATEUR"
+	BATUSD   = "BATUSD"
+	BATXBT   = "BATXBT"
 	BCHEUR   = "BCHEUR"
 	BCHUSD   = "BCHUSD"
 	BCHXBT   = "BCHXBT"
@@ -113,6 +117,10 @@ type AssetPairsResponse struct {
 	ADAEUR   AssetPairInfo
 	ADAUSD   AssetPairInfo
 	ADAXBT   AssetPairInfo
+	BATETH   AssetPairInfo
+	BATEUR   AssetPairInfo
+	BATUSD   AssetPairInfo
+	BATXBT   AssetPairInfo
 	BCHEUR   AssetPairInfo
 	BCHUSD   AssetPairInfo
 	BCHXBT   AssetPairInfo
@@ -222,6 +230,7 @@ type AssetPairInfo struct {
 // AssetsResponse includes asset informations
 type AssetsResponse struct {
 	ADA  AssetInfo
+	BAT  AssetInfo
 	BCH  AssetInfo
 	DASH AssetInfo
 	EOS  AssetInfo
@@ -268,6 +277,7 @@ type AssetInfo struct {
 // BalanceResponse represents the account's balances (list of currencies)
 type BalanceResponse struct {
 	ADA  float64 `json:"ADA,string"`
+	BAT  float64 `json:BAT,string"`
 	BCH  float64 `json:"BCH,string"`
 	DASH float64 `json:"DASH,string"`
 	EOS  float64 `json:"EOS,string"`
@@ -319,6 +329,10 @@ type Fees struct {
 	ADAEUR   FeeInfo
 	ADAUSD   FeeInfo
 	ADAXBT   FeeInfo
+	BATETH   FeeInfo
+	BATEUR   FeeInfo
+	BATUSD   FeeInfo
+	BATXBT   FeeInfo
 	BCHEUR   FeeInfo
 	BCHUSD   FeeInfo
 	BCHXBT   FeeInfo
@@ -412,6 +426,10 @@ type TickerResponse struct {
 	ADAEUR   PairTickerInfo
 	ADAUSD   PairTickerInfo
 	ADAXBT   PairTickerInfo
+	BATETH   PairTickerInfo
+	BATEUR   PairTickerInfo
+	BATUSD   PairTickerInfo
+	BATXBT   PairTickerInfo
 	BCHEUR   PairTickerInfo
 	BCHUSD   PairTickerInfo
 	BCHXBT   PairTickerInfo
