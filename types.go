@@ -277,7 +277,7 @@ type AssetInfo struct {
 // BalanceResponse represents the account's balances (list of currencies)
 type BalanceResponse struct {
 	ADA  float64 `json:"ADA,string"`
-	BAT  float64 `json:BAT,string"`
+	BAT  float64 `json:"BAT,string"`
 	BCH  float64 `json:"BCH,string"`
 	DASH float64 `json:"DASH,string"`
 	EOS  float64 `json:"EOS,string"`
