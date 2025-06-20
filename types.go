@@ -23,6 +23,7 @@ const (
 	BCHEUR   = "BCHEUR"
 	BCHUSD   = "BCHUSD"
 	BCHXBT   = "BCHXBT"
+	CHEXUSD  = "CHEXUSD"
 	DASHEUR  = "DASHEUR"
 	DASHUSD  = "DASHUSD"
 	DASHXBT  = "DASHXBT"
@@ -124,6 +125,7 @@ type AssetPairsResponse struct {
 	BCHEUR   AssetPairInfo
 	BCHUSD   AssetPairInfo
 	BCHXBT   AssetPairInfo
+	CHEXUSD  AssetPairInfo
 	DASHEUR  AssetPairInfo
 	DASHUSD  AssetPairInfo
 	DASHXBT  AssetPairInfo
@@ -232,6 +234,7 @@ type AssetsResponse struct {
 	ADA  AssetInfo
 	BAT  AssetInfo
 	BCH  AssetInfo
+	CHEX AssetInfo
 	DASH AssetInfo
 	EOS  AssetInfo
 	GNO  AssetInfo
@@ -279,6 +282,7 @@ type BalanceResponse struct {
 	ADA  float64 `json:"ADA,string"`
 	BAT  float64 `json:"BAT,string"`
 	BCH  float64 `json:"BCH,string"`
+	CHEX float64 `json:"CHEX,string"`
 	DASH float64 `json:"DASH,string"`
 	EOS  float64 `json:"EOS,string"`
 	GNO  float64 `json:"GNO,string"`
@@ -336,6 +340,7 @@ type Fees struct {
 	BCHEUR   FeeInfo
 	BCHUSD   FeeInfo
 	BCHXBT   FeeInfo
+	CHEXUSD  FeeInfo
 	DASHEUR  FeeInfo
 	DASHUSD  FeeInfo
 	DASHXBT  FeeInfo
@@ -433,6 +438,7 @@ type TickerResponse struct {
 	BCHEUR   PairTickerInfo
 	BCHUSD   PairTickerInfo
 	BCHXBT   PairTickerInfo
+	CHEXUSD  PairTickerInfo
 	DASHEUR  PairTickerInfo
 	DASHUSD  PairTickerInfo
 	DASHXBT  PairTickerInfo
